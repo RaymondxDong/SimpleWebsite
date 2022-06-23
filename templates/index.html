@@ -1,13 +1,156 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Simple Website</title>
-</head>
-<body>
-    <h1>Hello</h1>
-</body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+
+<!--===============================
+=            Hero Area            =
+================================-->
+
+<section class="hero-area bg-1 text-center overly">
+    <!-- Container Start -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Header Contetnt -->
+                <div class="content-block">
+                    <h1>Chenshiming Factory </h1>
+                    <p>We have a lot lunbox <br> Contact Us soon</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container End -->
+</section>
+
+<!--===================================
+=            Client Slider            =
+====================================-->
+
+
+<!--===========================================
+=            Popular deals section            =
+============================================-->
+
+<section class="popular-deals section bg-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h2>以下是我们研发的Lunch Box !!!</h2>
+                    <p>快来买，快来买！</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- offer 01 -->
+            <div class="col-lg-12">
+                <div class="trending-ads-slide">
+                    <div class="col-sm-12 col-lg-4">
+                        <!-- product card -->
+                        <div class="product-item bg-light">
+                            <div class="card">
+                                <div class="thumb-content">
+                                    <!-- <div class="price">$200</div> -->
+                                    <a href="single.html">
+                                        <img alt="Card image cap" class="card-img-top img-fluid"
+                                             src="{{ url_for('static', filename='images/products/products-1.jpg')}}">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title"><a href="single.html">Lunch box#1</a></h4>
+
+                                    <p class="card-text">好东西1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4">
+                        <!-- product card -->
+                        <div class="product-item bg-light">
+                            <div class="card">
+                                <div class="thumb-content">
+                                    <!-- <div class="price">$200</div> -->
+                                    <a href="single.html">
+                                        <img alt="Card image cap" class="card-img-top img-fluid"
+                                             src="{{ url_for('static', filename='images/products/products-1.jpg')}}">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title"><a href="single.html">Lunch box#2</a></h4>
+
+                                    <p class="card-text">好东西2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4">
+                        <!-- product card -->
+                        <div class="product-item bg-light">
+                            <div class="card">
+                                <div class="thumb-content">
+                                    <!-- <div class="price">$200</div> -->
+                                    <a href="single.html">
+                                        <img alt="Card image cap" class="card-img-top img-fluid"
+                                             src="{{ url_for('static', filename='images/products/products-1.jpg')}}">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title"><a href="single.html">Lunch box#3</a></h4>
+
+                                    <p class="card-text">好东西3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-4">
+                        <!-- product card -->
+                        <div class="product-item bg-light">
+                            <div class="card">
+                                <div class="thumb-content">
+                                    <!-- <div class="price">$200</div> -->
+                                    <a href="single.html">
+                                        <img alt="Card image cap" class="card-img-top img-fluid"
+                                             src="{{ url_for('static', filename='images/products/products-1.jpg')}}">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title"><a href="single.html">Lunch box#4</a></h4>
+
+                                    <p class="card-text">好东西4</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+<!--====================================
+=            Call to Action            =
+=====================================-->
+
+<section class="call-to-action overly bg-3 section-sm">
+    <!-- Container Start -->
+    <div class="container">
+        <div class="row justify-content-md-center text-center">
+            <div class="col-md-8">
+                <div class="content-holder">
+                    <h2>check our lunch box products</h2>
+                    <ul class="list-inline mt-30">
+                        <li class="list-inline-item"><a class="btn btn-main" href="ad-listing.html">Check our
+                            product</a>
+                        </li>
+                        <li class="list-inline-item"><a class="btn btn-secondary" href="category.html">About us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Container End -->
+</section>
+{% endblock %}
